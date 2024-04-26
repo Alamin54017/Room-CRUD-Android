@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this,UpdateUserActivity.class));
         });
 
+        delete.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this,DeleteUserActivity.class));
+        });
+
         /*List<User> users = userDao.getAll();
 
         TextView text=findViewById(R.id.text);
